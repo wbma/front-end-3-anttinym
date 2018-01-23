@@ -1,0 +1,7 @@
+<ul class="card-deck">
+  <li class="card" *ngFor="let media of mediaArray">
+    <img [src]="mediaService.mediaUrl + thumbnailer(media.filename)">
+    <h4>{{media.title}}</h4>
+    <p>{{media.description}}</p>
+  </li>
+</ul>
