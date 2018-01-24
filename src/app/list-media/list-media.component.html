@@ -1,3 +1,11 @@
+<ul>
+  <li *ngFor="let stop of stopArray">
+    <!--<p>Routes: {{stop.name}}</p>-->
+    <p *ngFor="let i of stop.patterns"> {{i.route.longName + "  Route number:" + i.route.shortName}}</p>
+  </li>
+</ul>
+
+
 <ul class="card-deck">
   <li class="card" *ngFor="let media of mediaArray">
     <img [src]="mediaService.mediaUrl + thumbnailer(media.filename)">
