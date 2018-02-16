@@ -1,2 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+app-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  text-align: center;
+}
+.content ul {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content li {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.card {
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-img-top {
+  width: 100%;
+  object-fit: scale-down;
+}

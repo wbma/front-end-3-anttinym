@@ -1,15 +1,17 @@
-<ul>
+<!--ul>
   <li *ngFor="let stop of stopArray">
-    <!--<p>Routes: {{stop.name}}</p>-->
+    <!--<p>Routes: {{stop.name}}</p>->
     <p *ngFor="let i of stop.patterns"> {{i.route.longName + "  Route number:" + i.route.shortName}}</p>
   </li>
-</ul>
+</ul-->
 
-
+<div class="content">
+  <h1>Feed</h1>
 <ul class="card-deck">
   <li class="card" *ngFor="let media of mediaArray">
-    <img [src]="mediaService.mediaUrl + thumbnailer(media.filename)">
-    <h4>{{media.title}}</h4>
-    <p>{{media.description}}</p>
+    <img class="card-img-top" [src]="mediaService.mediaUrl + thumbnailer(media.filename)">
+    <h4 class="card-title">{{media.title}}</h4>
+    <p class="card-text">{{media.description}}</p>
   </li>
 </ul>
+</div>
